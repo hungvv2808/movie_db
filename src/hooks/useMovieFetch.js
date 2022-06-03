@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import API from "../API";
+import { isPersistedState } from "../helpers";
 
 export const useMovieFetch = (movieId) => {
   const [state, setState] = useState({});
@@ -26,8 +27,20 @@ export const useMovieFetch = (movieId) => {
       }
     };
 
+    const sessionState = isPersistedState(movieId);
+    if (sessionState) {
+      setState(sessionState);
+      setLoading(false);
+      return;
+    }
+
     fetchMovie();
   }, [movieId]);
+
+  // write to session storage
+  useEffect(() => {
+    sessionStorage.setItem(movieId, JSON.stringify(state));
+  }, [movieId, state]);
 
   return { state, loading, error };
 };
