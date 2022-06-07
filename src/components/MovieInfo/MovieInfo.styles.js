@@ -37,6 +37,8 @@ export const Text = styled.div`
   padding: 20px 40px;
   color: var(--white);
   overflow: hidden;
+  background-color: #ff45000f;
+  border-radius: 20px;
 
   .rating-directors {
     display: flex;

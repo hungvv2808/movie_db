@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.button`
   display: block;
-  background: var(--darkGrey);
+  background: var(--orangeRed);
   width: 25%;
   min-width: 200px;
   height: 60px;
@@ -17,5 +17,11 @@ export const Wrapper = styled.button`
 
   :hover {
     opacity: 0.8;
+  }
+
+  ion-icon {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 4px;
   }
 `;

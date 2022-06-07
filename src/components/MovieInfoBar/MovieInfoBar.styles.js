@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   min-height: 100px;
-  background: var(--darkGrey);
+  background: var(--orangeRed);
   padding: 0 20px;
 `;
 
@@ -18,17 +18,27 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--medGrey);
+    background: var(--white);
     border-radius: 20px;
     margin: 0 20px;
     flex: 1;
-    color: var(--white);
 
     :first-child {
       margin-left: 0;
     }
     :last-child {
       margin-right: 0;
+    }
+
+    :hover {
+      background-color: var(--green);
+      p {
+        color: var(--white);
+      }
+    }
+
+    p {
+      color: var(--black);
     }
 
     @media screen and (max-width: 768px) {

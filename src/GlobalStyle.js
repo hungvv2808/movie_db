@@ -3,14 +3,19 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root {
         --maxWidth: 1280px;
-        --white: #fff;
-        --lightGrey: #eee;
-        --medGrey: #353535;
-        --darkGrey: #1c1c1c;
-        --fontSuperBig: 2.5rem;
         --fontBig: 1.5rem;
         --fontMed: 1.2rem;
         --fontSmall: 1rem;
+        --fontSuperBig: 2.5rem;
+        --white: #fff;
+        --black: #000;
+        --lightGrey: #eee;
+        --medGrey: #353535;
+        --darkGrey: #1c1c1c;
+        --orange: #FF5349;
+        --bgrOrange: #e63e00;
+        --green: #00ff45;
+        --orangeRed: #ff4500;
     }
     * {
         box-sizing: border-box;
@@ -19,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
+        background-color: var(--medGrey);
 
         h1 {
             font-size: 2rem;
@@ -31,9 +37,9 @@ export const GlobalStyle = createGlobalStyle`
             font-weight: 600;
         }
 
-        p {
+        p, span {
             font-size: 1rem;
-            color: var(---white);
+            color: var(--white);
         }
     }
 

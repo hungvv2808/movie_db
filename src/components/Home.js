@@ -62,6 +62,7 @@ class Home extends Component {
 
   render() {
     const { searchTerm, movies, loading, error } = this.state;
+    console.log(movies);
 
     if (error) return <div>Something went wrong ...</div>;
     return (
@@ -90,7 +91,11 @@ class Home extends Component {
         </Grid>
         {loading && <Spinner />}
         {movies.page < movies.total_pages && !loading && (
-          <Button text="Load more" callback={this.handleLoadMore} />
+          <Button
+            text="Load more"
+            callback={this.handleLoadMore}
+            icon="reload-outline"
+          />
         )}
       </>
     );

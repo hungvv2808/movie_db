@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   height: 100px;
-  background: var(--darkGrey);
+  background: var(--orangeRed);
   padding: 0 20px;
 `;
 
@@ -13,10 +13,10 @@ export const Content = styled.div`
   max-width: var(--maxWidth);
   width: 100%;
   height: 55px;
-  background: var(--medGrey);
+  background: var(--white);
   margin: 0 auto;
   border-radius: 40px;
-  color: var(--white);
+  color: var(--black);
 
   img {
     position: absolute;
@@ -35,7 +35,7 @@ export const Content = styled.div`
     width: 95%;
     background: transparent;
     height: 40px;
-    color: var(--white);
+    color: var(--black);
 
     :focus {
       outline: none;

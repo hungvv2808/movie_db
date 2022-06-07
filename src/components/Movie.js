@@ -21,7 +21,7 @@ class Movie extends Component {
   };
 
   fetchMovie = async () => {
-    const { movieId } = this.props.params;
+    const movieId = this.props.params.moveId;
 
     try {
       this.setState({ loading: true, error: false });
