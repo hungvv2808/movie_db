@@ -8,6 +8,12 @@ export const Wrapper = styled.div`
   background: var(--bgrOrange);
   padding: 15px 0;
   margin-top: 4vh;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,6 +25,10 @@ export const Content = styled.div`
   margin-top: 10px;
   color: var(--white);
   max-width: 35vw;
+
+  @media screen and (max-width: 768px) {
+    max-width: 85vw;
+  }
 
   .info {
     display: flex;
@@ -70,4 +80,8 @@ export const Image = styled.img`
   width: 200px;
   object-fit: cover;
   border-radius: 15px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 15vw;
+  }
 `;
