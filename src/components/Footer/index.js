@@ -27,7 +27,7 @@ const Footer = () => (
         <div className="info-author">
           <p>
             This website is designed by Parker with ReactJS. You can check the
-            ratting and movie detail here. If you have any questions or concerns
+            rating and movie detail here. If you have any questions or concerns
             I am more than happy to support you. Please contact me via email:
             <a href="mailto:vuhung2881999@gmail.com">vuhung2881999@gmail.com</a>
           </p>
